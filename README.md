@@ -4,16 +4,21 @@
 To view the readme in http style view (like in github) use https://markdownlivepreview.com/
 
 ## Description:
-Your task is to implement a service able to store and retrieve data. 
-Data does not have to be persisted meaning storing it in-memory is enough. 
-Data structure is pre-defined as following:
+A Data Query Api to retrieve Items data using an SqlLike api request. 
+
+Item structure:
 
 | Fields                                        | Example     | 
 | -----------                                   | ----------- | 
 | id - text <br>title - text<br> content - text <br>views - integer number<br>timestamp - integer number|{ "id": "first-post", "title": "My First Post","content": "Hello World!","views": 1,"timestamp": 1555832341 }
  
+
+This Api is using [CQEngine](https://github.com/npgall/cqengine).
+
+CQEngine is a NoSQL indexing and Query Engine, for retrieving objects matching SQL-like queries from Java collections, with ultra-low latency.
+
       
-### API requirements
+### Endpoints
 API consists of two end-points - one to store data and one to retrieve it.  
 
 | Endpoint                                        | Example     | Response  | 
